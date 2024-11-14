@@ -1,0 +1,172 @@
+.avender{
+    font-size: 30px;
+    display: inline-block;
+}
+
+.fotos{
+    width: 650px;
+}
+
+section{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.containertop{
+    display: flex;
+    gap: 300px;
+}
+
+h1{
+    color: white;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.ejemplocliente{
+    font-size: 22px;
+    color: white;
+    
+}
+
+p{
+    font-size: 25px;
+}
+
+p1{
+    color: white;
+    font-size: 18px;
+    
+}
+
+p2{
+    color: white;
+    font-size: 18px;
+}
+
+p3{
+    color: white;
+    font-size: 18px;
+}
+
+p4{
+    color: white;
+    font-size: 18px;
+}
+
+p5{
+    color: white;
+    font-size: 18px;
+}
+
+p6{
+    color: white;
+    font-size: 18px;
+}
+
+.rutinapecho{
+    width: 190px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.rutinaespalda{
+    width: 200px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.rutinahombro{
+    width: 200px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.rutinabiceps{
+    width: 150px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.rutinatriceps{
+    width: 160px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.rutinapiernas{ 
+    width: 200px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;   
+    max-width: 20px;   
+}
+
+.container a{
+text-decoration: none;
+color: white;
+}
+
+ul{ 
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+}
+
+li{
+    padding: 3px;
+    color: white;  
+}
+
+.container1{
+    display: flex;
+    gap: 36%;
+}
+
+button{
+    background-color: lightslategray;
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: darkred   ;
+    color: white;
+    border-radius: 15px;
+    transition-duration: 1s;
+}
+
+
+
+
+
+
+
+

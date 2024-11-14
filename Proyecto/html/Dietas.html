@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dietas</title>
+    <link rel="stylesheet" href="..\css\dietas.css">
+    <link rel="shortcut icon" type="img/png" href="..\img\favicum.png"/>
+</head>
+<body>
+    <script>
+        // Función para mostrar/ocultar ambas listas al hacer clic en el botón principal
+        function toggleAmbasListas() {
+            toggleLista('lista-especificaciones');
+            toggleLista('lista-titulaciones');
+        }
+    
+        // Función para mostrar/ocultar una lista específica
+        function toggleLista(id) {
+            var lista = document.getElementById(id);
+            lista.style.display = lista.style.display === "none" || lista.style.display === "" ? "block" : "none";
+
+            
+        }
+    </script>
+
+<header>
+<p>Carlos Benítez Fonseca</p>
+</header>
+   
+<div class="contenedor">
+    <button class="boton-principal" onclick="toggleAmbasListas()">Ficha técnica</button>
+
+    <div id="contenedor-especificaciones">
+        <div class="titulo-lista" onclick="toggleLista('lista-especificaciones')">Especialista</div>
+        <ul class="lista" id="lista-especificaciones">
+            <li>Nutrición Deportiva</li>
+            <li>Bioquímica Nutricional</li>
+            <li>Planificación Dietética</li>
+            <li>Dietoterapia</li>
+        </ul>
+    </div>
+
+    <div id="contenedor-titulaciones">
+        <div class="titulo-lista" onclick="toggleLista('lista-titulaciones')">Titulaciones</div>
+        <ul class="lista" id="lista-titulaciones">
+            <li>Técnico Superior en Dietética</li>
+            <li>Certificación en Nutrición Deportiva</li>
+            <li>Curso de Nutrición Deportiva y Coaching Nutricional</li>
+            <li>Técnico Superior en Acondicionamiento Físico</li>
+        </ul>
+    </div>
+</div>
+        
+<section>
+    <div class="imagen-container">
+        <img src="..\img/ganarpeso.png">
+        <div class="texto">Ganar peso</div>
+    </div>
+
+    <div class="imagen-container">
+        <img src="..\img/pierdepeso.png">
+        <div class="texto">Perder peso</div>
+    </div>
+</section>
+
+<div class="videos">
+    <video src="..\videos\buly.mp4" height="400px" width="350px" controls></video>
+    <video src="..\videos\definition.mp4" height="400px" width="350px" controls></video>
+</div>
+
+<footer>
+<div class="redesso">
+    <div class="youtube">
+    <a href="https://www.youtube.com/channel/UCpolZrYpJOOKXQpEbF9Mtjg" target="_blank">
+        <img src="..\img\yt.jpg"></a>
+     </div>
+    
+    <div class="x">
+    <a href="https://x.com/ambitioGYM" target="_blank">
+        <img src="..\img\x.jpg"></a>
+    </div>
+
+    <div class="tiktok">
+     <a href="https://www.tiktok.com/@ambitio_gym?is_from_webapp=1&sender_device=pc" target="_blank">
+        <img src="..\img\tiktok.jpg"></a>
+    </div>
+</div>
+</footer>
+</body>
+</html>
